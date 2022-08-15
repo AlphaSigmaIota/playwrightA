@@ -10,3 +10,10 @@ class MainPage:
     def navigate(self):
         """Navigation to the page"""
         self.page.goto(settings.URLS.PLAYWRIGHT_DEV)
+
+    def __getattr__(self, name):
+        """
+        Method called if attribute is not implemented in this Page Object.
+        Return attribute of the standard playwright page
+        """
+        return object.__getattribute__(self.page, name)
