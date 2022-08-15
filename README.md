@@ -6,4 +6,6 @@ How to setup:
 2) playwright install
 
 How to use:
-1)
+1) Check playwright is working properly with running file "check_playwright.py"
+    You should see a chrome instance openes the official playwright.dev website
+2) Run tests
