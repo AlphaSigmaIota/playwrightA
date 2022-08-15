@@ -1,0 +1,10 @@
+playwright
+pytest
+pytest-playwright
+
+#optional libs for pre-commit checks
+#pre-commit
+#black
+#flake8
+#isort
+#interrogate
