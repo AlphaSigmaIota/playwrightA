@@ -18,6 +18,7 @@ def test_button_get_started(page):
     main_page = MainPage(page)
     main_page.navigate()
     main_page.check_present()
+    main_page.button_get_started.screenshot(path="abc.png") # ganz viel schmarrn rein schreibe und das dann commiten will...
     main_page.button_get_started.click()
 
     docs_page = DocsPage(page)
