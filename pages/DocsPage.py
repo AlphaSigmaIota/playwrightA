@@ -17,6 +17,6 @@ class DocsPage(ModelPage):
         main_page.check_am_i_there()
         main_page.button_get_started.click()
 
-    def check_am_i_there(self):
+    def check_present(self):
         """Method for checking if the Page is opened."""
         assert self.label_title.is_visible(), "DocsPage is not visible"
