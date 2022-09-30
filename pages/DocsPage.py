@@ -14,7 +14,10 @@ class DocsPage(ModelPage):
         """Alternative navigation method to just calling of the URL"""
         main_page = MainPage(self.page)
         main_page.navigate()
-        main_page.check_am_i_there()
+        main_page.check_present()
+        main_page.screenshot()
+
+        main_page.button_get_started.screenshot(path="abc.png")
         main_page.button_get_started.click()
 
     def check_present(self):
